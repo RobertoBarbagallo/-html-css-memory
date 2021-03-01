@@ -6,27 +6,27 @@
 
 body{
     background-color: #ADD8E6;
+    font-family: 'Sigmar One', cursive;
 }
 
 header h1{
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Sigmar One', cursive;
     padding-top: 30px;
     color: white;
     font-size: 50px;
 }
 
 main{
-    width: 70%;
+    width: calc(200px * 4 + 10px * 8);
+    height: calc(300px + 2*10px);
     margin: auto;
 }
 
 .raw{
     width: 100%;
-    height: 200px;
-    margin-top: 20px;
-   
+    height: auto;
+    margin-top: 10px;   
 }
 
 raw::after {
@@ -37,19 +37,86 @@ raw::after {
 }
 
 .card{
-    /* background-color: bisque; */
-    width: calc(100% / 4);
-    height: 100%;
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
     float: left;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+
 }
 
-img{
+.card-back{
+   
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    background-color: bisque;
+    background-image: url(pattern.png);
+    background-color: white;
+    background-size: contain;
     border-radius: 10px;
-    /* display: none; */
+    position: absolute;
+    border-radius: 10px;
+    
+}
+
+.card:hover .card-front{
+    display: inline-block;
+}
+
+
+
+.card-front{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: center;
+    display: none;
+    
+}
+
+.one{
+    background-image: url(noun_air_balloon_3134741.png);
+    color: red;
+}
+
+.two{
+    background-image: url(noun_Bicycle_3134821.png);
+    color: yellow;
+}
+
+.three{
+    background-image: url(noun_Cruise_Ship_3134824.png);
+    color: green;
+}
+
+.four{
+    background-image: url(noun_Submarine_3134738.png);
+    color: blue;
+}
+
+.five{
+    background-image: url(noun_Tractor_3134797.png);
+    color:cyan
+}
+
+.six{
+    background-image: url(noun_Tram_3134750.png);
+    color: violet;
+
+}
+h2{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+
+}
+
+#fixed{
+    display: inline-block;
 }

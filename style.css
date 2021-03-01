@@ -25,6 +25,8 @@ main{
 .raw{
     width: 100%;
     height: 200px;
+    margin-top: 20px;
+   
 }
 
 raw::after {
@@ -35,8 +37,19 @@ raw::after {
 }
 
 .card{
-    background-color: bisque;
+    /* background-color: bisque; */
     width: calc(100% / 4);
     height: 100%;
     float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: bisque;
+    border-radius: 10px;
+    /* display: none; */
 }

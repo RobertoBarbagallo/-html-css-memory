@@ -22,3 +22,21 @@ main{
     margin: auto;
 }
 
+.raw{
+    width: 100%;
+    height: 200px;
+}
+
+raw::after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+
+.card{
+    background-color: bisque;
+    width: calc(100% / 4);
+    height: 100%;
+    float: left;
+}
